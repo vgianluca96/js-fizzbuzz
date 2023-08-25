@@ -21,12 +21,12 @@ for (let i= 1; i <= 100; i++) {
         } else {
             console.log('Fizz');
             divText = 'Fizz';
-            divClass = 'text-bg-warning';
+            divClass = 'text-bg-primary';
         }
     } else if (i%5 == 0) {
         console.log('Buzz');
         divText = 'Buzz';
-        divClass = 'text-bg-danger';
+        divClass = 'text-bg-warning';
     } else {
         console.log(i);
         divText = i;
@@ -34,8 +34,8 @@ for (let i= 1; i <= 100; i++) {
     }
 
     // Creazione nuovo div che conterrà la stringa data da divText
-    let newDiv = `<div class="col-1">
-    <div class="py-3 ${divClass}">
+    let newDiv = `<div class="col-1 p-1">
+    <div class="py-3 rounded ${divClass}">
     <div>${divText}</div>
     </div>
     </div>`;
